@@ -6,6 +6,6 @@ class MyController
 {
     public function index()
     {
-        return 'ok';
+        return view('example::packageView');
     }
 }

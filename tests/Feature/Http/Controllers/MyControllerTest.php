@@ -7,5 +7,5 @@ use function Pest\Laravel\get;
 it('has a route', function () {
     get(action([MyController::class, 'index']))
         ->assertOk()
-        ->assertSee('ok');
+        ->assertSee('Thing goes here');
 });
