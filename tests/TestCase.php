@@ -14,7 +14,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Tefabi\\Example\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn(string $modelName) => 'Tefabi\\Example\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
         );
     }
 
@@ -27,9 +27,11 @@ class TestCase extends Orchestra
 
     public function getEnvironmentSetUp($app)
     {
+        config()->set('database.default', 'testing');
+
         Schema::dropAllTables();
 
-        foreach (\Illuminate\Support\Facades\File::allFiles(__DIR__.'/../database/migrations') as $migration) {
+        foreach (\Illuminate\Support\Facades\File::allFiles(__DIR__ . '/../database/migrations') as $migration) {
             (include $migration->getRealPath())->up();
         }
     }
