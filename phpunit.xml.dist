@@ -29,10 +29,10 @@
         </include>
     </source>
      <php>
-        <env name="DB_DATABASE" value="mysql"/>
-        <env name="DB_CONNECTION" value="root"/>
-        <env name="DB_USERNAME" value="laravel_example"/>
+        <env name="DB_CONNECTION" value="mysql"/>
         <env name="DB_HOST" value="127.0.0.1"/>
         <env name="DB_PORT" value="3306"/>
+        <env name="DB_USERNAME" value="root"/>
+        <env name="DB_DATABASE" value="laravel_example"/>
     </php>
 </phpunit>
