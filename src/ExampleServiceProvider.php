@@ -21,7 +21,7 @@ class ExampleServiceProvider extends PackageServiceProvider
             /*
             ->hasViews()
             */
-            ->hasMigration('create_my_model_table')
+            ->hasMigration('create_my_models_table')
             ->hasCommand(ExampleCommand::class);
     }
 }

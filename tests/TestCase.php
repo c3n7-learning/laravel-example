@@ -3,6 +3,7 @@
 namespace Tefabi\Example\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Facades\Schema;
 use Orchestra\Testbench\TestCase as Orchestra;
 use Tefabi\Example\ExampleServiceProvider;
 
@@ -26,12 +27,10 @@ class TestCase extends Orchestra
 
     public function getEnvironmentSetUp($app)
     {
-        config()->set('database.default', 'testing');
+        Schema::dropAllTables();
 
-        /*
-         foreach (\Illuminate\Support\Facades\File::allFiles(__DIR__ . '/database/migrations') as $migration) {
+        foreach (\Illuminate\Support\Facades\File::allFiles(__DIR__ . '/../database/migrations') as $migration) {
             (include $migration->getRealPath())->up();
-         }
-         */
+        }
     }
 }
