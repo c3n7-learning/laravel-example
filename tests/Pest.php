@@ -1,5 +1,5 @@
 <?php
 
-use Tefabi\LaravelExample\Tests\TestCase;
+use Tefabi\Example\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

@@ -1,12 +1,12 @@
 <?php
 
-namespace Tefabi\LaravelExample;
+namespace Tefabi\Example;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Tefabi\LaravelExample\Commands\LaravelExampleCommand;
+use Tefabi\Example\Commands\ExampleCommand;
 
-class LaravelExampleServiceProvider extends PackageServiceProvider
+class ExampleServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -22,6 +22,6 @@ class LaravelExampleServiceProvider extends PackageServiceProvider
             ->hasViews()
             */
             ->hasMigration('create_my_model_table')
-            ->hasCommand(LaravelExampleCommand::class);
+            ->hasCommand(ExampleCommand::class);
     }
 }

@@ -1,10 +1,10 @@
 <?php
 
-namespace Tefabi\LaravelExample\Commands;
+namespace Tefabi\Example\Commands;
 
 use Illuminate\Console\Command;
 
-class LaravelExampleCommand extends Command
+class ExampleCommand extends Command
 {
     public $signature = 'my-command';
 

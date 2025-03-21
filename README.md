@@ -52,7 +52,7 @@ php artisan vendor:publish --tag="laravel-example-views"
 ## Usage
 
 ```php
-$laravelExample = new Tefabi\LaravelExample();
+$laravelExample = new Tefabi\Example();
 echo $laravelExample->echoPhrase('Hello, Tefabi!');
 ```
 
@@ -76,8 +76,8 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [Timothy Karani](https://github.com/c3n7-learning)
-- [All Contributors](../../contributors)
+-   [Timothy Karani](https://github.com/c3n7-learning)
+-   [All Contributors](../../contributors)
 
 ## License
 

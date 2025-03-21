@@ -1,6 +1,6 @@
 <?php
 
-namespace Tefabi\LaravelExample\Database\Factories;
+namespace Tefabi\Example\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

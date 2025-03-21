@@ -34,13 +34,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Tefabi\\LaravelExample\\": "src/",
-            "Tefabi\\LaravelExample\\Database\\Factories\\": "database/factories/"
+            "Tefabi\\Example\\": "src/",
+            "Tefabi\\Example\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tefabi\\LaravelExample\\Tests\\": "tests/",
+            "Tefabi\\Example\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -62,10 +62,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Tefabi\\LaravelExample\\LaravelExampleServiceProvider"
+                "Tefabi\\Example\\ExampleServiceProvider"
             ],
             "aliases": {
-                "LaravelExample": "Tefabi\\LaravelExample\\Facades\\LaravelExample"
+                "Example": "Tefabi\\Example\\Facades\\Example"
             }
         }
     },

@@ -1,10 +1,10 @@
 <?php
 
-namespace Tefabi\LaravelExample\Tests;
+namespace Tefabi\Example\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Tefabi\LaravelExample\LaravelExampleServiceProvider;
+use Tefabi\Example\ExampleServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,14 +13,14 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Tefabi\\LaravelExample\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn(string $modelName) => 'Tefabi\\Example\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
         );
     }
 
     protected function getPackageProviders($app)
     {
         return [
-            LaravelExampleServiceProvider::class,
+            ExampleServiceProvider::class,
         ];
     }
 
